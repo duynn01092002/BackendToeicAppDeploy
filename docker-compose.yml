@@ -17,4 +17,5 @@ services:
       - db
     image: tomcat
     volumes:
+      - /root/toeic-app-01/stream:/root/toeic-app-01/stream
       - ./Toeic.war:/usr/local/tomcat/webapps/Toeic.war:ro

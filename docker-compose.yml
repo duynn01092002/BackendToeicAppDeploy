@@ -6,6 +6,7 @@ services:
       - ./mysql-dump:/docker-entrypoint-initdb.d:rw
       - ./mysql-data:/var/lib/mysql:rw
       - ./wait-for-mysql-started.sh:/wait-for-mysql-started.sh:ro
+      - ./localstorage:/root/toeic-app-01/storage
     environment:
       MYSQL_ROOT_PASSWORD: 1234
       MYSQL_PASSWORD: 1234

@@ -6,7 +6,6 @@ services:
       - ./mysql-dump:/docker-entrypoint-initdb.d:rw
       - ./mysql-data:/var/lib/mysql:rw
       - ./wait-for-mysql-started.sh:/wait-for-mysql-started.sh:ro
-      - ./localstorage:/root/toeic-app-01/storage
     environment:
       MYSQL_ROOT_PASSWORD: 1234
       MYSQL_PASSWORD: 1234
@@ -20,3 +19,4 @@ services:
     volumes:
       - /root/toeic-app-01/stream:/root/toeic-app-01/stream
       - ./Toeic.war:/usr/local/tomcat/webapps/Toeic.war:ro
+      - ./localstorage:/root/toeic-app-01/storage

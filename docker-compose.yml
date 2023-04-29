@@ -9,7 +9,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: 1234
       MYSQL_PASSWORD: 1234
-      MYSQL_DATABASE: socialmediaapp
+      MYSQL_DATABASE: toeicapp
   web:
     ports:
       - "127.0.0.1:8080:8080"
